@@ -1,0 +1,16 @@
+<section class="card card-green">
+  <h2>Liste des amis</h2>
+
+  <!-- two-way binding : modifier un champ modifie les 2 autres -->
+  <input type="text" [(ngModel)]="myName" />
+  <input type="text" [(ngModel)]="myName" />
+  <input type="text" [(ngModel)]="myName" />
+
+  <ul>
+    @for (friend of friends; track friend) {
+      <li>{{ friend }}</li>
+    } @empty {
+      <li>Aucun ami.</li>
+    }
+  </ul>
+</section>

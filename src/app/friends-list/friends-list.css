@@ -1,0 +1,10 @@
+.card {
+  display: block;
+  background: white;
+  border-radius: 16px;
+  padding: 20px 28px;
+  margin-bottom: 14px;
+  border-left: 5px solid #1f9d6b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+h2 { color: #1e3a6e; margin-top: 0; }

@@ -1,0 +1,9 @@
+<nav class="navbar">
+  @for (link of links; track link) {
+    @if (link !== 'Admin' || isAdmin) {
+      <a href="#" [class.active]="link === activeLink" (click)="select(link, $event)">
+        {{ link }}
+      </a>
+    }
+  }
+</nav>
